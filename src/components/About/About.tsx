@@ -44,7 +44,7 @@ function About() {
                 <span className={styles.infoValue}>{portfolioData.contactInfo.phone}</span>
               </div>
             </div>
-            <a href={`${basePath}cv.pdf`} target="_blank" rel="noopener noreferrer" className="btn-outline">
+            <a href={`${basePath}${encodeURIComponent(portfolioData.cvFilename)}`} target="_blank" rel="noopener noreferrer" className="btn-outline">
               Open CV
             </a>
           </div>

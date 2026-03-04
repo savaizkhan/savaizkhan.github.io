@@ -11,13 +11,13 @@
   text-align: center;
 }
 
-.greeting {
-  font-size: 1.125rem;
-  color: var(--accent);
-  font-weight: 600;
-  margin-bottom: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.profileImage {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin-bottom: 1.5rem;
 }
 
 .headline {

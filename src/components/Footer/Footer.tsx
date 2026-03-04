@@ -10,7 +10,7 @@ function Footer() {
         <div className={styles.footerTop}>
           <div className={styles.footerBrand}>
             <a href="#home" className={styles.logo}>
-              {portfolioData.name.split(' ')[0]}
+              {portfolioData.name.split(' ')[1]}
               <span>.</span>
             </a>
             <p className={styles.tagline}>{portfolioData.title}</p>
