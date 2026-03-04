@@ -50,9 +50,9 @@ function Footer() {
         </div>
 
         <div className={styles.footerContact}>
-          <span>{portfolioData.contactInfo.email}</span>
+          <a href={`mailto:${portfolioData.contactInfo.email}`} aria-label={`Send email to ${portfolioData.contactInfo.email}`}>{portfolioData.contactInfo.email}</a>
           <span className={styles.separator}>|</span>
-          <span>{portfolioData.contactInfo.phone}</span>
+          <a href={`tel:${portfolioData.contactInfo.phone.replace(/\s/g, '')}`} aria-label={`Call ${portfolioData.contactInfo.phone}`}>{portfolioData.contactInfo.phone}</a>
         </div>
 
         <div className={styles.footerBottom}>

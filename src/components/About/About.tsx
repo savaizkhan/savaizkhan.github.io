@@ -31,7 +31,7 @@ function About() {
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Email:</span>
-                <span className={styles.infoValue}>{portfolioData.contactInfo.email}</span>
+                <a href={`mailto:${portfolioData.contactInfo.email}`} aria-label={`Send email to ${portfolioData.contactInfo.email}`} className={styles.infoValue}>{portfolioData.contactInfo.email}</a>
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Location:</span>
@@ -39,7 +39,7 @@ function About() {
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Phone:</span>
-                <span className={styles.infoValue}>{portfolioData.contactInfo.phone}</span>
+                <a href={`tel:${portfolioData.contactInfo.phone.replace(/\s/g, '')}`} aria-label={`Call ${portfolioData.contactInfo.phone}`} className={styles.infoValue}>{portfolioData.contactInfo.phone}</a>
               </div>
             </div>
             <a href={`${basePath}${encodeURIComponent(portfolioData.cvFilename)}`} target="_blank" rel="noopener noreferrer" className="btn-outline">

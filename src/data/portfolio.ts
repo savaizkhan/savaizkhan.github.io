@@ -81,7 +81,7 @@ export const portfolioData: PortfolioData = {
   socialLinks: [
     {
       platform: 'LinkedIn',
-      url: 'https://linkedin.com/in/muhammad-savaiz-khan-5a3145242/',
+      url: 'https://www.linkedin.com/in/muhammad-savaiz-khan/',
       icon: 'linkedin',
     },
     {
