@@ -4,7 +4,7 @@ A responsive, dark-themed single-page portfolio website built with React + TypeS
 
 ## Live URL
 
-🔗 [https://faisalrehman30001.github.io/savaiz.github.io/](https://faisalrehman30001.github.io/savaiz.github.io/)
+🔗 [https://muhammadsavaizkhan.tech/](https://muhammadsavaizkhan.tech/)
 
 ## Tech Stack
 
@@ -50,3 +50,4 @@ public/
 ## Deployment
 
 Push to `main` branch triggers automatic deployment to GitHub Pages via the GitHub Actions workflow in `.github/workflows/deploy.yml`.
+The published domain is configured via `public/CNAME`, and GitHub Pages can serve it over HTTPS once DNS is correctly pointed to GitHub.
