@@ -49,5 +49,6 @@ public/
 
 ## Deployment
 
-Push to `main` branch triggers automatic deployment to GitHub Pages via the GitHub Actions workflow in `.github/workflows/deploy.yml`.
-The published domain is configured via `public/CNAME`, and GitHub Pages can serve it over HTTPS once DNS is correctly pointed to GitHub.
+`pages-build-deployment` runs first, then `.github/workflows/deploy.yml` publishes the Vite `dist` artifact to GitHub Pages so production always serves compiled assets.
+The published domain is configured via `CNAME`/`public/CNAME` as `muhammadsavaizkhan.tech`.
+In GitHub Pages settings, keep **Custom domain** set to `muhammadsavaizkhan.tech` and enable **Enforce HTTPS** after DNS is pointed to GitHub.
