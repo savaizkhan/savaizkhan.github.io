@@ -50,5 +50,5 @@ public/
 ## Deployment
 
 `pages-build-deployment` runs first, then `.github/workflows/deploy.yml` publishes the Vite `dist` artifact to GitHub Pages so production always serves compiled assets.
-The published domain is configured via `CNAME`/`public/CNAME` as `muhammadsavaizkhan.tech`.
+The published domain is configured as `muhammadsavaizkhan.tech` in both `CNAME` (branch-level Pages fallback) and `public/CNAME` (Vite artifact deployment).
 In GitHub Pages settings, keep **Custom domain** set to `muhammadsavaizkhan.tech` and enable **Enforce HTTPS** after DNS is pointed to GitHub.
