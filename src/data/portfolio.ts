@@ -2,7 +2,6 @@
 
 import aiVoiceAgentImg from '../assets/projectsImage/AI-PoweredVoiceAgentSystem.jpg'
 import airtableDbImg from '../assets/projectsImage/AirtableEnterpriseDatabaseArchitecture.png'
-import lmsImg from '../assets/projectsImage/LearningManagementSystemforMadaris.jpg'
 import notionKmsImg from '../assets/projectsImage/NotionKnowledgeManagementSystem.png'
 
 export interface NavLink {
@@ -64,11 +63,11 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   name: 'Muhammad Savaiz Khan',
   title: 'Automation Engineer | Workflow Specialist | AI Integration Expert',
-  heroHeadline: 'I Build AI-Powered Automation Systems That Transform Your Business',
+  heroHeadline: 'I Build AI Powered Automation Systems That Transform Your Business',
   heroSubheading: 'Automation Engineer | Workflow Specialist | AI Integration Expert',
   aboutBio:
-    'I help businesses eliminate manual work, streamline operations, and scale faster with intelligent automation. From CRM integrations and data pipelines to AI-powered voice agents and content management platforms, I design end-to-end systems using Make.com, Zapier, N8N, Airtable, and Notion that deliver measurable ROI — saving 120+ hours monthly, generating 10,000+ qualified leads, and cutting operational costs by up to 70%.',
-  cvFilename: 'cv.pdf',
+    'I help businesses eliminate manual work, streamline operations, and scale faster with intelligent automation. From CRM integrations and data pipelines to AI-powered voice agents and content management platforms, I design end-to-end systems using Make.com, Zapier, N8N, Airtable, and Notion that deliver measurable ROI — saving 120+ hours monthly, generating 2,000+ qualified leads, and cutting operational costs by up to 70%.',
+  cvFilename: 'Savaiz Khan cv.pdf',
 
   navLinks: [
     { label: 'Home', href: '#home' },
@@ -82,7 +81,7 @@ export const portfolioData: PortfolioData = {
   socialLinks: [
     {
       platform: 'LinkedIn',
-      url: 'https://linkedin.com/in/muhammad-savaiz-khan-5a3145242/',
+      url: 'https://www.linkedin.com/in/muhammad-savaiz-khan/',
       icon: 'linkedin',
     },
     {
@@ -93,9 +92,9 @@ export const portfolioData: PortfolioData = {
   ] as const,
 
   stats: [
-    { value: '1+', label: 'Years Experience' },
+    { value: '2+', label: 'Years Experience' },
     { value: '50+', label: 'Automation Workflows' },
-    { value: '10,000+', label: 'Leads Generated Monthly' },
+    { value: '2,000+', label: 'Leads Generated Monthly' },
   ] as const,
 
   services: [
@@ -121,7 +120,7 @@ export const portfolioData: PortfolioData = {
       icon: '📊',
       title: 'Data Extraction & Lead Generation',
       description:
-        'Multi-source data pipelines generating 10,000+ qualified leads monthly with 95% accuracy, reducing cost per lead by 50%.',
+        'Multi-source data pipelines generating 2,000+ qualified leads monthly with 95% accuracy, reducing cost per lead by 50%.',
     },
     {
       icon: '🗄️',
@@ -146,7 +145,6 @@ export const portfolioData: PortfolioData = {
     { name: 'API Integration', percentage: 90 },
     { name: 'JavaScript / Node.js', percentage: 80 },
     { name: 'React.js', percentage: 75 },
-    { name: 'Python', percentage: 75 },
     { name: 'Notion', percentage: 90 },
   ] as const,
 
@@ -169,7 +167,7 @@ export const portfolioData: PortfolioData = {
       title: 'Automated Data Extraction & Lead Intelligence',
       category: 'Data',
       description:
-        'Multi-source data extraction generating 10,000+ qualified leads monthly with 95% data accuracy.',
+        'Multi-source data extraction generating 2,000+ qualified leads monthly with 95% data accuracy.',
       image: 'linear-gradient(135deg, #2e1a1a, #3e1616)',
     },
     {
@@ -185,13 +183,6 @@ export const portfolioData: PortfolioData = {
       description:
         'Conversational AI system handling 500+ calls weekly with 85% resolution rate and 70% cost reduction.',
       image: aiVoiceAgentImg,
-    },
-    {
-      title: 'Learning Management System for Madaris',
-      category: 'Development',
-      description:
-        'Three-portal LMS built with React.js and .NET Core supporting Admin, Teacher, and Student roles with multilingual support.',
-      image: lmsImg,
     },
     {
       title: 'Notion Knowledge Management System',

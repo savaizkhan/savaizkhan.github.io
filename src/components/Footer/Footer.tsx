@@ -10,7 +10,7 @@ function Footer() {
         <div className={styles.footerTop}>
           <div className={styles.footerBrand}>
             <a href="#home" className={styles.logo}>
-              {portfolioData.name.split(' ')[0]}
+              {portfolioData.name.split(' ')[1]}
               <span>.</span>
             </a>
             <p className={styles.tagline}>{portfolioData.title}</p>
@@ -50,9 +50,9 @@ function Footer() {
         </div>
 
         <div className={styles.footerContact}>
-          <span>{portfolioData.contactInfo.email}</span>
+          <a href={`mailto:${portfolioData.contactInfo.email}`} aria-label={`Send email to ${portfolioData.contactInfo.email}`}>{portfolioData.contactInfo.email}</a>
           <span className={styles.separator}>|</span>
-          <span>{portfolioData.contactInfo.phone}</span>
+          <a href={`tel:${portfolioData.contactInfo.phone.replace(/\s/g, '')}`} aria-label={`Call ${portfolioData.contactInfo.phone}`}>{portfolioData.contactInfo.phone}</a>
         </div>
 
         <div className={styles.footerBottom}>

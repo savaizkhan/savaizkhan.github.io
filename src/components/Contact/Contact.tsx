@@ -57,7 +57,7 @@ function Contact() {
               </div>
               <div>
                 <h4 className={styles.contactLabel}>Email</h4>
-                <p className={styles.contactValue}>{portfolioData.contactInfo.email}</p>
+                <a href={`mailto:${portfolioData.contactInfo.email}`} aria-label={`Send email to ${portfolioData.contactInfo.email}`} className={styles.contactValue}>{portfolioData.contactInfo.email}</a>
               </div>
             </div>
 
@@ -69,7 +69,7 @@ function Contact() {
               </div>
               <div>
                 <h4 className={styles.contactLabel}>Phone</h4>
-                <p className={styles.contactValue}>{portfolioData.contactInfo.phone}</p>
+                <a href={`tel:${portfolioData.contactInfo.phone.replace(/\s/g, '')}`} aria-label={`Call ${portfolioData.contactInfo.phone}`} className={styles.contactValue}>{portfolioData.contactInfo.phone}</a>
               </div>
             </div>
 

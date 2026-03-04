@@ -36,7 +36,7 @@ function Navbar() {
     <nav className={styles.navbar}>
       <div className={`container ${styles.navContainer}`}>
         <a href="#home" className={styles.logo}>
-          {portfolioData.name.split(' ')[0]}
+          {portfolioData.name.split(' ')[1]}
           <span>.</span>
         </a>
 

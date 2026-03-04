@@ -7,7 +7,6 @@ function Hero() {
   return (
     <section id="home" className={styles.hero}>
       <div className={`container ${styles.heroContainer}`}>
-        <p className={styles.greeting}>Hello, I&apos;m</p>
         <h1 className={styles.headline}>{portfolioData.heroHeadline}</h1>
         <p className={styles.subheading}>{portfolioData.heroSubheading}</p>
 
@@ -39,7 +38,7 @@ function Hero() {
           <a href="#contact" className="btn-primary">
             Hire Me
           </a>
-          <a href={`${basePath}cv.pdf`} target="_blank" rel="noopener noreferrer" className="btn-outline">
+          <a href={`${basePath}${encodeURIComponent(portfolioData.cvFilename)}`} target="_blank" rel="noopener noreferrer" className="btn-outline">
             Open CV
           </a>
         </div>

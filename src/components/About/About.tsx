@@ -1,3 +1,4 @@
+import profileImage from '../../assets/profileImage/profileImage.jpeg'
 import { portfolioData } from '../../data/portfolio'
 import styles from './About.module.css'
 
@@ -12,14 +13,11 @@ function About() {
         </h2>
         <div className={styles.aboutGrid}>
           <div className={styles.visual}>
-            <div className={styles.visualPlaceholder}>
-              <span className={styles.initials}>
-                {portfolioData.name
-                  .split(' ')
-                  .map((n) => n[0])
-                  .join('')}
-              </span>
-            </div>
+            <img
+              src={profileImage}
+              alt={portfolioData.name}
+              className={styles.profileImage}
+            />
           </div>
           <div className={styles.content}>
             <h3 className={styles.contentTitle}>
@@ -33,7 +31,7 @@ function About() {
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Email:</span>
-                <span className={styles.infoValue}>{portfolioData.contactInfo.email}</span>
+                <a href={`mailto:${portfolioData.contactInfo.email}`} aria-label={`Send email to ${portfolioData.contactInfo.email}`} className={styles.infoValue}>{portfolioData.contactInfo.email}</a>
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Location:</span>
@@ -41,10 +39,10 @@ function About() {
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Phone:</span>
-                <span className={styles.infoValue}>{portfolioData.contactInfo.phone}</span>
+                <a href={`tel:${portfolioData.contactInfo.phone.replace(/\s/g, '')}`} aria-label={`Call ${portfolioData.contactInfo.phone}`} className={styles.infoValue}>{portfolioData.contactInfo.phone}</a>
               </div>
             </div>
-            <a href={`${basePath}cv.pdf`} target="_blank" rel="noopener noreferrer" className="btn-outline">
+            <a href={`${basePath}${encodeURIComponent(portfolioData.cvFilename)}`} target="_blank" rel="noopener noreferrer" className="btn-outline">
               Open CV
             </a>
           </div>
