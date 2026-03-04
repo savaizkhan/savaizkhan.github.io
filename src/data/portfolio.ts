@@ -67,7 +67,7 @@ export const portfolioData: PortfolioData = {
   heroSubheading: 'Automation Engineer | Workflow Specialist | AI Integration Expert',
   aboutBio:
     'I help businesses eliminate manual work, streamline operations, and scale faster with intelligent automation. From CRM integrations and data pipelines to AI-powered voice agents and content management platforms, I design end-to-end systems using Make.com, Zapier, N8N, Airtable, and Notion that deliver measurable ROI — saving 120+ hours monthly, generating 2,000+ qualified leads, and cutting operational costs by up to 70%.',
-  cvFilename: 'Savaiz Khan cv.pdf',
+  cvFilename: 'Savaiz-Khan-cv.pdf',
 
   navLinks: [
     { label: 'Home', href: '#home' },
