@@ -1,4 +1,3 @@
-import profileImage from '../../assets/profileImage/profileImage.jpeg'
 import { portfolioData } from '../../data/portfolio'
 import styles from './Hero.module.css'
 
@@ -8,11 +7,6 @@ function Hero() {
   return (
     <section id="home" className={styles.hero}>
       <div className={`container ${styles.heroContainer}`}>
-        <img
-          src={profileImage}
-          alt={portfolioData.name}
-          className={styles.profileImage}
-        />
         <h1 className={styles.headline}>{portfolioData.heroHeadline}</h1>
         <p className={styles.subheading}>{portfolioData.heroSubheading}</p>
 

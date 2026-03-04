@@ -11,15 +11,6 @@
   text-align: center;
 }
 
-.profileImage {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--accent);
-  margin-bottom: 1.5rem;
-}
-
 .headline {
   font-family: var(--font-heading);
   font-size: clamp(2.8rem, 7vw, 6.5rem);

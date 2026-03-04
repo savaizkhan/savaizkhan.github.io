@@ -1,3 +1,4 @@
+import profileImage from '../../assets/profileImage/profileImage.jpeg'
 import { portfolioData } from '../../data/portfolio'
 import styles from './About.module.css'
 
@@ -12,14 +13,11 @@ function About() {
         </h2>
         <div className={styles.aboutGrid}>
           <div className={styles.visual}>
-            <div className={styles.visualPlaceholder}>
-              <span className={styles.initials}>
-                {portfolioData.name
-                  .split(' ')
-                  .map((n) => n[0])
-                  .join('')}
-              </span>
-            </div>
+            <img
+              src={profileImage}
+              alt={portfolioData.name}
+              className={styles.profileImage}
+            />
           </div>
           <div className={styles.content}>
             <h3 className={styles.contentTitle}>

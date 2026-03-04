@@ -10,22 +10,12 @@
   justify-content: center;
 }
 
-.visualPlaceholder {
+.profileImage {
   width: 280px;
   height: 280px;
   border-radius: 16px;
-  background: linear-gradient(135deg, var(--card-bg), rgba(249, 115, 22, 0.1));
+  object-fit: cover;
   border: 2px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.initials {
-  font-family: var(--font-heading);
-  font-size: 4rem;
-  font-weight: 800;
-  color: var(--accent);
 }
 
 .content {
@@ -79,12 +69,8 @@
     text-align: left;
   }
 
-  .visualPlaceholder {
+  .profileImage {
     width: 200px;
     height: 200px;
-  }
-
-  .initials {
-    font-size: 3rem;
   }
 }
